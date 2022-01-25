@@ -51,10 +51,14 @@ def next_turn(snake, food):
 
     snake.squares.insert(0, square)
 
+    del snake.coordinates[-1]
 
-    
+    canvas.delete(snake.squares[-1])
+
+    del snake.squares[-1]
 
     window.after(SPEED, next_turn, snake, food)
+    
 def change_direction(new_direction):
     pass
 
