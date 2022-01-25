@@ -1,14 +1,15 @@
-from tkinter import *
-import random
+from tkinter import *           #Import tkinter to use the console to create the game
+import random                   #import random for the food of the snake
 
-GAME_WIDTH = 700
-GAME_HEIGHT = 700
-SPEED = 50
-SPACE_SIZE = 50
-BODY_PARTS = 3 #Change the size of the snake at the beginning 
-SNAKE_COLOR = "#00FF00" #Color snake = GREEN from [HEX]. Others= RGB, CMYK, HSV, HSL
-FOOD_COLOR = "#FF0000" #Color food = RED from [HEX].
-BACKGROUND_COLOR = "#000000" #Color background = Black from [HEX].
+GAME_WIDTH = 700                #Width of the game
+GAME_HEIGHT = 700               #Height of the game
+SPEED = 50                      #Speed of the snake
+SPACE_SIZE = 25                 #Size of the space of the game
+BODY_PARTS = 3                  #Size of the snake at the beginning
+                                #Website too see the HEX codes and the color corresponent = https://htmlcolorcodes.com/
+SNAKE_COLOR = "#00FF00"         #Color snake = GREEN from [HEX]. Others= RGB, CMYK, HSV, HSL         
+FOOD_COLOR = "#FF0000"          #Color food = RED from [HEX].
+BACKGROUND_COLOR = "#000000"    #Color background = Black from [HEX].
 
 
 class Snake:
@@ -127,7 +128,7 @@ def game_over():
 
 window = Tk()
 window.title("Snake game")
-window.resizable(False, False) #Can be change the X-Axis and Y-Axis, respectivament (x,y) using TRUE and FALSE
+window.resizable(False, False)  #Can be change the X-Axis and Y-Axis, respectivament (x,y) using TRUE and FALSE
 
 score = 0
 direction = 'down'
@@ -150,6 +151,13 @@ y = int((screen_height/2) - (window_height/2))
 
 window.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
+#*************************   Using a,s,d,w to move the snake******************* 
+window.bind('<w>', lambda event: change_direction('up'))
+window.bind('<a>', lambda event: change_direction('left'))
+window.bind('<s>', lambda event: change_direction('down'))
+window.bind('<d>', lambda event: change_direction('right'))
+
+#*************************   Using arrow keys to move the snake*******************
 window.bind('<Left>', lambda event: change_direction('left'))
 window.bind('<Right>', lambda event: change_direction('right'))
 window.bind('<Up>', lambda event: change_direction('up'))
