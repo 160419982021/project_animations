@@ -5,7 +5,7 @@ GAME_WIDTH = 700
 GAME_HEIGHT = 700
 SPEED = 50
 SPACE_SIZE = 50
-BODY_PARTS = 15 #Change the size of the snake at the beginning 
+BODY_PARTS = 3 #Change the size of the snake at the beginning 
 SNAKE_COLOR = "#00FF00" #Color snake = GREEN from [HEX]. Others= RGB, CMYK, HSV, HSL
 FOOD_COLOR = "#FF0000" #Color food = RED from [HEX].
 BACKGROUND_COLOR = "#000000" #Color background = Black from [HEX].
@@ -115,7 +115,11 @@ def check_collisions(snake):
     return False
 
 def game_over():
-    pass
+
+    canvas.delete(ALL)
+    canvas.create_text(canvas.winfo_width()/2, canvas.winfo_height()/2,
+                       font=('consolas',70), text="GAME OVER", fill="red", tag="gameover")
+
 
 window = Tk()
 window.title("Snake game")
