@@ -10,7 +10,9 @@ SNAKE_COLOR = "#00FF00" #Color snake = GREEN from [HEX]. Others= RGB, CMYK, HSV,
 FOOD_COLOR = "#FF0000" #Color food = RED from [HEX].
 BACKGROUND_COLOR = "#000000" #Color background = Black from [HEX].
 
+
 class Snake:
+    
     def __init__(self):
         self.body_size = BODY_PARTS
         self.coordinates = []
@@ -23,7 +25,9 @@ class Snake:
             square = canvas.create_rectangle(x, y, x + SPACE_SIZE, y + SPACE_SIZE, fill=SNAKE_COLOR, tag="snake")
             self.squares.append(square)
 
+
 class Food:
+    
     def __init__(self):
 
         x = random.randint(0, (GAME_WIDTH / SPACE_SIZE)-1) * SPACE_SIZE
@@ -33,7 +37,9 @@ class Food:
 
         canvas.create_oval(x, y, x + SPACE_SIZE, y + SPACE_SIZE, fill=FOOD_COLOR, tag="food")
 
+
 def next_turn(snake, food):
+
     x, y = snake.coordinates[0]
 
     if direction == "up":
@@ -71,15 +77,12 @@ def next_turn(snake, food):
 
         del snake.squares[-1]
 
-
-
     if check_collisions(snake):
         game_over()
 
     else:
         window.after(SPEED, next_turn, snake, food)
 
-    
     
 def change_direction(new_direction):
 
@@ -107,12 +110,13 @@ def check_collisions(snake):
         return True
     elif y < 0 or y >= GAME_HEIGHT:
         return True
+    
     for body_part in snake.coordinates[1:]:
         if x == body_part[0] and y == body_part[1]:
-            print ("Game Over - you eat yourself")
             return True
 
     return False
+
 
 def game_over():
 
