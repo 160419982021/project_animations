@@ -104,8 +104,12 @@ def check_collisions(snake):
     x, y = snake.coordinates[0]
 
     if x < 0 or x >= GAME_WIDTH:
-        print("Game Over") # print in the Python Shell
         return True
+    elif y < 0 or y >= GAME_HEIGHT:
+        print("Game Over")
+        return True
+
+
 def game_over():
     pass
 
