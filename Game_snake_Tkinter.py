@@ -4,7 +4,7 @@ import random                   #import random for the food of the snake
 GAME_WIDTH = 700                #Width of the game
 GAME_HEIGHT = 700               #Height of the game
 SPEED = 50                      #Speed of the snake
-SPACE_SIZE = 25                 #Size of the space of the game
+SPACE_SIZE = 50                 #Size of the space of the game
 BODY_PARTS = 3                  #Size of the snake at the beginning
                                 #Website too see the HEX codes and the color corresponent = https://htmlcolorcodes.com/
 SNAKE_COLOR = "#00FF00"         #Color snake = GREEN from [HEX]. Others= RGB, CMYK, HSV, HSL         
@@ -84,7 +84,7 @@ def next_turn(snake, food):
     else:
         window.after(SPEED, next_turn, snake, food)
 
-    
+#************************   Define the direction of the snake using the keyboard to control  ******************* 
 def change_direction(new_direction):
 
     global direction
@@ -102,7 +102,7 @@ def change_direction(new_direction):
         if direction != 'up':
             direction = new_direction
             
-
+#************************    Define when the snake collitionate with the limits ("walls")  ******************* 
 def check_collisions(snake):
 
     x, y = snake.coordinates[0]
@@ -118,7 +118,7 @@ def check_collisions(snake):
 
     return False
 
-
+#********Define Game Over at the Screen (text, font, colour, tag, position of the text)  ******************* 
 def game_over():
 
     canvas.delete(ALL)
@@ -126,32 +126,34 @@ def game_over():
                        font=('consolas',70), text="GAME OVER", fill="red", tag="gameover")
 
 
-window = Tk()
-window.title("Snake game")
-window.resizable(False, False)  #Can be change the X-Axis and Y-Axis, respectivament (x,y) using TRUE and FALSE
+window = Tk()                                                                                   #Window with Tkinter
+window.title("Snake game")                                                                      #Text in the title of the Tkinter
+window.resizable(False, False)                                                                  #Can be change the X-Axis and Y-Axis, respectivament (x,y) using TRUE and FALSE
 
-score = 0
-direction = 'down'
+score = 0                                                                                       #Since which number start counting the score 
+direction = 'down'                                                                              #Direcction of the snake => From the initial position of the snake 
 
-label = Label(window, text="Score:{}".format(score), font=('consolas', 40))
+label = Label(window, text="Score:{}".format(score), font=('consolas', 40))                     #Label in the Tkinter Centtre, format and font of the text
 label.pack()
 
-canvas = Canvas(window, bg=BACKGROUND_COLOR, height=GAME_HEIGHT, width=GAME_WIDTH)
+canvas = Canvas(window, bg=BACKGROUND_COLOR, height=GAME_HEIGHT, width=GAME_WIDTH)              #Canvas of the window in Tkinter
 canvas.pack()
 
 window.update()
+
+#************************    Sezing the creeen of the game  ******************* 
 
 window_width = window.winfo_width()
 window_height = window.winfo_height()
 screen_width = window.winfo_screenwidth()
 screen_height = window.winfo_screenheight()
 
-x = int((screen_width/2) - (window_width/2))
-y = int((screen_height/2) - (window_height/2))
+x = int((screen_width/2) - (window_width/2))                                                    #Centring the screen in Tkinter X-Axis depends on the Screen_Width and Window_width
+y = int((screen_height/2) - (window_height/2))                                                  #Centring the screen in Tkinter Y-Axis depends on the Screen_Height and Window_height
 
 window.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
-#*************************   Using a,s,d,w to move the snake******************* 
+#*************************   Using a,s,d,w to move the snake  ******************* 
 window.bind('<w>', lambda event: change_direction('up'))
 window.bind('<a>', lambda event: change_direction('left'))
 window.bind('<s>', lambda event: change_direction('down'))
