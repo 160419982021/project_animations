@@ -198,7 +198,7 @@ while led<60:
 
             #First line (Empty)
 
-            #Second Line
+        #Second Line
         leds[90-led-1] = (255,255,255)
         leds[90-led] = (255,255,255)
         leds[90-led+1] = (255,255,255)
@@ -210,7 +210,7 @@ while led<60:
         leds[150-led+1] = (255,255,102)#Yellow
         leds[150-led+2] = (255,255,255)
 
-##        #Fourth Line
+        #Fourth Line
         leds[210-led-3] = (255,255,255)
         leds[210-led-2] = (255,255,255)
         leds[210-led-1] = (255,255,255)
@@ -218,20 +218,19 @@ while led<60:
         leds[210-led+1] = (255,255,255)
         leds[210-led+2] = (255,255,255)
         leds[210-led+3] = (255,255,255)
-##
-##        #Five Line# CORREGIR LINEA
-        leds[270-led-3] = (255,0,0)
-        leds[270-led-2] = (255,0,0)
-        leds[270-led-1] = (255,255,255)
+
+        #Five Line# 
+       
+        leds[270-led-2] = (255,255,255)
+        leds[270-led-1] = (255,0,0)#rojo
         leds[270-led] = (255,0,0)
         leds[270-led+1] = (255,0,0)
-        leds[270-led+2] = (255,0,0)
-        leds[270-led+3] = (255,255,255)
-##
-##        #Sixth Line
-##        leds[350-led-4] = (102,51,0)
-##        leds[350-led-3] = (102,51,0)
+        leds[270-led+2] = (255,255,255)
 
+        #Sixth Line#
+        leds[330-led-1] = (255,255,255)
+        leds[330-led] = (255,255,255)
+        leds[330-led+1] = (255,255,255)
 
         client.put_pixels(leds)
         time.sleep(.1)
