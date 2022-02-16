@@ -1,5 +1,9 @@
 #Position  of the led in the game World and Characters
 
+
+#Website to change and modify colors (https://www.rapidtables.com/web/color/RGB_Color.html)
+
+
 import opc
 import time
 import random
@@ -63,7 +67,7 @@ while led<60:
         leds[110-led+7] = (255,255,102)
         
         client.put_pixels(leds)
-        time.sleep(.01)
+        time.sleep(.1)
     break
 
 
@@ -136,3 +140,49 @@ client.put_pixels(leds)
 time.sleep(.5)
     #break
 
+#~~~~~~~~~~~~~~~~~~~~~~~Character 3 The Grump (Mushroom)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#Only position of The Grump (Mushroom)
+led = 0
+while led<60:                 
+    for led in range(54-7):
+            
+        leds = [(225,225,225)]*360 #Whole simulator White R,G,B (x,x,x)
+
+            #First line (Empty)
+
+            #Second Line
+        leds[110-led-2] = (204,102,0)
+        leds[110-led-1] = (204,102,0)
+        leds[110-led-0] = (204,102,0)
+
+        #Third line
+        leds[170-led-3] = (204,102,0)
+        leds[170-led-2] = (255,255,102)#Yellow
+        leds[170-led-1] = (204,102,0)
+        leds[170-led-0] = (255,255,102)#Yellow
+        leds[170-led+1] = (204,102,0)
+
+        #Fourth Line
+        leds[230-led-4] = (204,102,0)
+        leds[230-led-3] = (204,102,0)
+        leds[230-led-2] = (204,102,0)
+        leds[230-led-1] = (255,0,0)
+        leds[230-led] = (204,102,0)
+        leds[230-led+1] = (204,102,0)
+        leds[230-led+2] = (204,102,0)
+
+        #Five Line
+        leds[290-led-2] = (255,128,0)
+        leds[290-led-1] = (255,128,0)
+        leds[290-led] = (255,128,0)
+
+        #Sixth Line
+        leds[350-led-4] = (102,51,0)
+        leds[350-led-3] = (102,51,0)
+
+        leds[350-led+1] = (102,51,0)
+        leds[350-led+2] = (102,51,0)
+
+        client.put_pixels(leds)
+        time.sleep(.1)
+    break
