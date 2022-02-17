@@ -67,7 +67,7 @@ while led<60:
         leds[110-led+7] = (255,255,102)
         
         client.put_pixels(leds)
-        time.sleep(.05)
+        time.sleep(.1)
     break
 
 
@@ -186,7 +186,7 @@ while led<60:
         leds[350-led+2] = (102,51,0)
 
         client.put_pixels(leds)
-        time.sleep(.1)
+        time.sleep(.5)
     break
 
 
@@ -235,7 +235,7 @@ while led<60:
         leds[330-led+1] = (255,255,255)
 
         client.put_pixels(leds)
-        time.sleep(.1)
+        time.sleep(.5)
     break
 
 #~~~~~~~~~~~~~~~~~~~~~~~Character 5 The Grump: Angel wings~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -309,7 +309,7 @@ while led<60:
         leds[350-led+2] = (102,51,0)
 
         client.put_pixels(leds)
-        time.sleep(.1)
+        time.sleep(.5)
     break
 
 #~~~~~~~~~~~~~~~~~~~~~~~Game World 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -439,5 +439,5 @@ leds[359] = (204,102,0)
 
 
 client.put_pixels(leds)
-time.sleep(.1)
+time.sleep(.5)
     #break
