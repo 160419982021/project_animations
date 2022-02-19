@@ -10,13 +10,24 @@ import opc
 import time
 import random
 
-leds =[(0,0,0)]*360
+leds =[(255,0,0)]*360
 
 client = opc.Client('localhost:7890')
 client.put_pixels(leds)
 client.put_pixels(leds)
 
+#5. Two colors from the outside will finish in the middle with differents colors
 
+    #para dos colores, uno desde la hizquierda y otro desde la derrecha
+#que se paran en el medio
+led = 0
+while led<30: # si cambio a led<60 al cruzarse se cambian los colores
+    for rows in range(6):
+        leds[led + rows*60] = (0,0,0)
+        leds[59-led + rows*60] = (0,0,0)
+    client.put_pixels(leds)
+    time.sleep(.1)
+    led = led + 1
 
 #~~~~~~~~~~~~~~~~~~~~~~~Character 5 The Grump: Angel wings~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
@@ -24,14 +35,13 @@ client.put_pixels(leds)
 #Moving from right to left
 led = 0
 while led<60:                 
-    for led in range(42):
+    for led in range(43):
             
         leds = [(0,0,0)]*360 #Whole simulator White R,G,B (x,x,x)
 
             #First line (Empty)
 
             #Second Line
-        leds[110-led-9] = (255,255,255)# White Wings
         leds[110-led-8] = (255,255,255)# White Wings
         leds[110-led-7] = (255,255,255)# White Wings
         leds[110-led-6] = (255,255,255)# White Wings
@@ -91,3 +101,16 @@ while led<60:
         client.put_pixels(leds)
         time.sleep(.08)
     break
+
+time.sleep(1)
+
+#4. para hacer todo de un color pero 3 filas desde la izquierda y 3 filas desde la derrecha
+led = 0
+while led<60:
+    for rows in range(3):
+        leds[led + rows*60] = (255,0,0) # Primeras 3 lineas de izquierda a derecha
+    for rows in range(3,6):
+        leds[59-led + rows*60] = (255,255,255) # Ultimas 3 lineas de derecha a izquierda
+    client.put_pixels(leds)
+    time.sleep(.03)
+    led = led + 1
