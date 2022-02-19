@@ -83,7 +83,8 @@ while led<60:
 
         time.sleep(1)
         #First line
-        leds[0+led] = (160,160,160)
+        
+        leds[0+led] = (160,160,160)      #ffsdfsdfdsf
         leds[0+led+1] = (160,160,160)
         leds[0+led+3] = (160,160,160)
 
@@ -148,7 +149,7 @@ led = 0
 while led<60:                 
     for led in range(54-7):
             
-        leds = [(225,225,225)]*360 #Whole simulator White R,G,B (x,x,x)
+        leds = [(10,10,10)]*360 #Whole simulator White R,G,B (x,x,x)
 
             #First line (Empty)
 
@@ -167,9 +168,9 @@ while led<60:
         #Fourth Line
         leds[230-led-4] = (204,102,0)
         leds[230-led-3] = (204,102,0)
-        leds[230-led-2] = (204,102,0)
+        leds[230-led-2] = (255,0,0)
         leds[230-led-1] = (255,0,0)
-        leds[230-led] = (204,102,0)
+        leds[230-led] = (255,0,0)
         leds[230-led+1] = (204,102,0)
         leds[230-led+2] = (204,102,0)
 
@@ -186,7 +187,7 @@ while led<60:
         leds[350-led+2] = (102,51,0)
 
         client.put_pixels(leds)
-        time.sleep(.5)
+        time.sleep(.3)
     break
 
 
@@ -288,9 +289,9 @@ while led<60:
         leds[230-led-5] = (255,255,255)# White Wings
         leds[230-led-4] = (204,102,0)
         leds[230-led-3] = (204,102,0)
-        leds[230-led-2] = (204,102,0)
+        leds[230-led-2] = (255,0,0)
         leds[230-led-1] = (255,0,0)
-        leds[230-led] = (204,102,0)
+        leds[230-led] = (255,0,0)
         leds[230-led+1] = (204,102,0)
         leds[230-led+2] = (204,102,0)
         leds[230-led+3] = (255,255,255) # White Wings
