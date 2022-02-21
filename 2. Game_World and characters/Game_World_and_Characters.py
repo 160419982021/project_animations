@@ -67,7 +67,7 @@ while led<60:
         leds[110-led+7] = (255,255,102)
         
         client.put_pixels(leds)
-        time.sleep(.1)
+        time.sleep(.01)#(.1)
     break
 
 
@@ -140,7 +140,7 @@ while led<60:
         leds[300+led+8] = (160,160,160)
 
         client.put_pixels(leds)
-        time.sleep(1)
+        time.sleep(.05)#(1)
     break
 
 #~~~~~~~~~~~~~~~~~~~~~~~Character 3 The Grump (Mushroom)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -187,7 +187,7 @@ while led<60:
         leds[350-led+2] = (102,51,0)
 
         client.put_pixels(leds)
-        time.sleep(.3)
+        time.sleep(.05)#(.3)
     break
 
 
@@ -310,7 +310,7 @@ while led<60:
         leds[350-led+2] = (102,51,0)
 
         client.put_pixels(leds)
-        time.sleep(.5)
+        time.sleep(.05)#(.5)
     break
 
 #~~~~~~~~~~~~~~~~~~~~~~~Game World 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -405,6 +405,10 @@ leds[309] = (204,102,0)
 leds[310] = (204,102,0)
 
 
+leds[316] = (204,102,0)#
+leds[317] = (204,102,0)
+leds[318] = (204,102,0)
+leds[319] = (204,102,0)#
 leds[320] = (204,102,0)
 leds[321] = (204,102,0)
 leds[322] = (204,102,0)
@@ -416,7 +420,7 @@ leds[327] = (204,102,0)
 leds[328] = (204,102,0)
 leds[329] = (204,102,0)
 leds[330] = (204,102,0)
-
+leds[331] = (204,102,0)
 
 leds[338] = (204,102,0)
 leds[339] = (204,102,0)
