@@ -10,7 +10,8 @@ import opc
 import time
 import random
 
-leds =[(255,0,0)]*360
+leds =[(255,0,255)]*360
+
 
 client = opc.Client('localhost:7890')
 client.put_pixels(leds)
@@ -22,9 +23,9 @@ client.put_pixels(leds)
 #que se paran en el medio
 led = 0
 while led<30: # si cambio a led<60 al cruzarse se cambian los colores
-    for rows in range(6):
-        leds[led + rows*60] = (0,0,0)
-        leds[59-led + rows*60] = (0,0,0)
+    for rows in range(7):
+        leds[led + rows*45] = (0,0,0)
+        leds[59-led + rows*45] = (0,0,0)
     client.put_pixels(leds)
     time.sleep(.1)
     led = led + 1
@@ -108,9 +109,9 @@ time.sleep(1)
 led = 0
 while led<60:
     for rows in range(3):
-        leds[led + rows*60] = (255,0,0) # Primeras 3 lineas de izquierda a derecha
+        leds[led + rows*60] = (255,255,255) # Primeras 3 lineas de izquierda a derecha
     for rows in range(3,6):
-        leds[59-led + rows*60] = (255,255,255) # Ultimas 3 lineas de derecha a izquierda
+        leds[59-led + rows*60] = (255,0,0) # Ultimas 3 lineas de derecha a izquierda
     client.put_pixels(leds)
     time.sleep(.03)
     led = led + 1
