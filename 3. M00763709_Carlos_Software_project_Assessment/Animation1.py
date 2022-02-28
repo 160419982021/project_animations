@@ -10,8 +10,10 @@ client = opc.Client('localhost:7890')
 client.put_pixels(leds)
 client.put_pixels(leds)
 
+time.sleep(1)
+
 ##1. left to right (Cortain - Red)
-##def Ani1():
+#def d():
 led=0
 for led in range(60):
     leds[led] = (255,0,0)
@@ -23,9 +25,10 @@ for led in range(60):
     time.sleep (0.02)
     client.put_pixels(leds)
 
+    
 
-
-# 2. Doble movement
+# 2. Doble movement (Light blue and Green)
+#def Doble():
 led = 0
 while led<60:
     for rows in range(3):
@@ -42,9 +45,13 @@ client = opc.Client('localhost:7890')
 client.put_pixels(leds)
 client.put_pixels(leds)
 
+
+
+
 #3. #Movement of Watt from right to left covering the whole horitzontal leds (Range 54)
 
 #~~~~~~~~~~~~~~~~~~~~~~~Character 1 Watt~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#def Watt():
 led = 0
 while led<60:                 
     for led in range(54):   
@@ -97,5 +104,25 @@ while led<60:
         client.put_pixels(leds)
         time.sleep(.1)
     break
+
+#4. Black Swipe 
+#def SwipeBlack ():
+    ##1. left to right (Cortain - Red)
+
+led=0
+for led in range(60):
+    leds[led] = (0,0,0)
+    leds[led+60] = (0,0,0)
+    leds[led+120] = (0,0,0)
+    leds[led+180] = (0,0,0)
+    leds[led+180+60] = (0,0,0)
+    leds[led+120+180] = (0,0,0)
+    time.sleep (0.02)
+    client.put_pixels(leds)
+    
+##d ()
+##
+##Watt ()
+##SwipeBlack ()
 
 
