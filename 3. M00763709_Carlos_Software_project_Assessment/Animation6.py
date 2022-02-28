@@ -14,6 +14,15 @@ client.put_pixels(leds)
 client.put_pixels(leds)
 
 
+#3. (Swipe left to right) para hacer todo de un color pero todas las filas a la vez 
+led = 0
+while led<60:
+    for rows in range(6):
+        leds[led + rows*60] = (0,100,255)
+    client.put_pixels(leds)
+    time.sleep(.02)
+    led = led + 1
+
 
 #~~~~~~~~~~~~~~~~~~~~~~~Game World 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
@@ -107,10 +116,10 @@ leds[309] = (204,102,0)
 leds[310] = (204,102,0)
 
 
-leds[316] = (204,102,0)#
+leds[316] = (204,102,0)
 leds[317] = (204,102,0)
 leds[318] = (204,102,0)
-leds[319] = (204,102,0)#
+leds[319] = (204,102,0)
 leds[320] = (204,102,0)
 leds[321] = (204,102,0)
 leds[322] = (204,102,0)
@@ -146,5 +155,145 @@ leds[359] = (204,102,0)
 
 
 client.put_pixels(leds)
-time.sleep(.5)
+time.sleep(2)
     #break
+
+
+    #3. (Swipe left to right) para hacer todo de un color pero todas las filas a la vez 
+led = 0
+while led<60:
+    for rows in range(6):
+        leds[led + rows*60] = (0,0,0)
+    client.put_pixels(leds)
+    time.sleep(.02)
+    led = led + 1
+
+
+
+#Point by point until last one 
+f = 0
+print (enumerate(leds))
+while True:
+    floor = [135,137,139,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347,348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359]
+    leds[floor[f]] = (204,102,0)
+    client.put_pixels(leds)
+    time.sleep(0.1)
+    f = f + 1
+    if f == 67:
+        break
+    
+time.sleep(1)
+
+n = 0
+print (enumerate(leds))
+while True:
+    nature = [271,272,273,212, 176,116]
+    leds[nature[n]] = (0,255,0)
+    client.put_pixels(leds)
+    time.sleep(0.1)
+    n = n + 1
+    if n == 6:
+        break
+    
+time.sleep(1)
+
+
+h= 0
+print (enumerate(leds))
+while True:
+    tree = [236]
+    leds[tree[h]] = (255,178,102)
+    client.put_pixels(leds)
+    time.sleep(0.1)
+    h = h + 1
+    if h == 1:
+        break
+time.sleep(1)
+
+
+c = 0
+print (enumerate(leds))
+while True:
+    clouds = [38,39,40,41, 99,100,  24,25,26]
+    leds[clouds[c]] = (0,255,255)
+    client.put_pixels(leds)
+    time.sleep(0.1)
+    c = c + 1
+    if c == 9:
+        break
+time.sleep(1)
+
+
+e = 0
+print (enumerate(leds))
+while True:
+    especial = [131,17,138]
+    leds[especial[e]] = (255,255,0)
+    client.put_pixels(leds)
+    time.sleep(0.1)
+    e = e + 1
+    if e == 3:
+        break
+time.sleep(1)
+
+b = 0
+print (enumerate(leds))
+while True:
+    block = [136]
+    leds[block[b]] = (102,0,0)
+    client.put_pixels(leds)
+    time.sleep(0.1)
+    b = b + 1
+    if b == 1:
+        break
+time.sleep(1)
+
+
+t = 0
+print (enumerate(leds))
+while True:
+    warrior = [75,248]
+    leds[warrior[t]] = (255,0,255)#PINK
+    client.put_pixels(leds)
+    time.sleep(0.1)
+    t = t + 1
+    if t == 2:
+        break
+time.sleep(1)
+
+
+r = 0
+print (enumerate(leds))
+while True:
+    connection = [5,6,64,65,66,67, 228,229,230,231,289,290]
+    leds[connection[r]] = (76,153,0)
+    client.put_pixels(leds)
+    time.sleep(0.1)
+    r = r + 1
+    if r == 12:
+        break
+time.sleep(1)
+
+m = 0
+print (enumerate(leds))
+while True:
+    mario = [240]
+    leds[mario[m]] = (255,0,0)
+    client.put_pixels(leds)
+    time.sleep(0.1)
+    m = m + 1
+    if m == 1:
+        break
+time.sleep(1)
+
+
+    #3. (Swipe left to right) para hacer todo de un color pero todas las filas a la vez 
+led = 0
+while led<60:
+    for rows in range(6):
+        leds[led + rows*60] = (0,0,0)
+    client.put_pixels(leds)
+    time.sleep(.02)
+    led = led + 1
+
+
