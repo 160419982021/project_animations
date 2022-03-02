@@ -60,7 +60,7 @@ def A1():                                               #DEF - keyword for defin
     led = 0                                             #Assignment of the LED equal to 0
     while led<60:                                       #While function                 
         for led in range(54):                           #For loop in range(X)   
-            leds = [(0,0,255)]*360                      #Whole simulator Blue R,G,B (0,0,0) - BLUE
+            leds = [(0,0,255)]*360                      #Whole simulator Blue R,G,B (X,X,X) - BLUE
             #~~~~~~~~~~~~~~~~~~~~~~~~~~~~Feet(Black -(0,0,0))~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             leds[351-led+2] = (0,0,0)                   #Position of the LED - assignment - Simulator color [R,G,B] - BLACK
             leds[351-led+3] = (0,0,0)                   #Position of the LED - assignment - Simulator color [R,G,B] - BLACK
