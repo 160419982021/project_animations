@@ -1,4 +1,4 @@
-#Animation1 - Created by Carlos Huallpa - M00763709 - 2nd Year Robotics and Mecahtronics
+#Animation1 - Created by Carlos Huallpa - M00763709 - 2nd Year Robotics and Mechatronics
 
 import opc                                              #Import Open Pixel Control
 import time                                             #Import time access and conversions 
@@ -43,7 +43,7 @@ def A1():                                               #DEF - keyword for defin
             leds[59-led + rows*60] = (0,255,0)          #Position of the LED and rows - assignment - Simulator color [R,G,B] - GREEN
         client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
         time.sleep(.01)                                 #Number in seconds - 0.1s
-        led = led + 1                                   #Count +1to the last number of led
+        led = led + 1                                   #Count +1 to the last number of led
 
     leds =[(0,0,0)]*360                                 #Simulator color [R,G,B] * numbers of leds working - White
 
