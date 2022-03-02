@@ -7,7 +7,7 @@ import random                                           #Import and generate pse
 def A1():                                               #DEF - keyword for defining a function
     
     ##A. Set up - White
-    ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     leds =[(255,255,255)]*360                           #Simulator color [R,G,B] * numbers of leds working - WHITE
 
     client = opc.Client('localhost:7890')               #Use the Simulator_Fadecandy
@@ -18,7 +18,7 @@ def A1():                                               #DEF - keyword for defin
 
 
     ##B. Left to right (Cortain - Red)
-    ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     led=0                                               #Assignment of the LED equal to 0
     for led in range(60):                               #For loop in range(X)
@@ -33,7 +33,7 @@ def A1():                                               #DEF - keyword for defin
 
 
     ##C. Doble movement (Light blue and Green)
-    ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     led = 0                                             #Assignment of the LED equal to 0
     while led<60:                                       #While function
@@ -53,15 +53,15 @@ def A1():                                               #DEF - keyword for defin
 
 
     ##D. Movement of Watt from right to left covering the whole horitzontal leds (Range 54)
-    ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Character 1 Watt~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Character 1 Watt~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     led = 0                                             #Assignment of the LED equal to 0
     while led<60:                                       #While function                 
         for led in range(54):                           #For loop in range(X)   
             leds = [(0,0,255)]*360                      #Whole simulator Blue R,G,B (0,0,0) - BLUE
-            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~Feet(Black -(0,0,0))~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~Feet(Black -(0,0,0))~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             leds[351-led+2] = (0,0,0)                   #Position of the LED - assignment - Simulator color [R,G,B] - BLACK
             leds[351-led+3] = (0,0,0)                   #Position of the LED - assignment - Simulator color [R,G,B] - BLACK
             leds[351-led+4] = (0,0,0)                   #Position of the LED - assignment - Simulator color [R,G,B] - BLACK
@@ -69,7 +69,7 @@ def A1():                                               #DEF - keyword for defin
             leds[351-led+6] = (0,0,0)                   #Position of the LED - assignment - Simulator color [R,G,B] - BLACK
             leds[351-led+7] = (0,0,0)                   #Position of the LED - assignment - Simulator color [R,G,B] - BLACK
             leds[351-led+8] = (0,0,0)                   #Position of the LED - assignment - Simulator color [R,G,B] - BLACK
-            #~~~~~~~~~~~~~~~~~~~~~~~~~~~Outside(Orange -(255,128,0))~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+            #~~~~~~~~~~~~~~~~~~~~~~~~~~~Outside(Orange -(255,128,0))~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             leds[290-led+5] = (255,128,0)               #Position of the LED - assignment - Simulator color [R,G,B] - ORANGE
             leds[290-led+6] = (255,128,0)               #Position of the LED - assignment - Simulator color [R,G,B] - ORANGE
             leds[290-led+7] = (255,128,0)               #Position of the LED - assignment - Simulator color [R,G,B] - ORANGE
@@ -87,7 +87,7 @@ def A1():                                               #DEF - keyword for defin
             leds[50-led+6] = (255,128,0)                #Position of the LED - assignment - Simulator color [R,G,B] - ORANGE
             leds[50-led+7] = (255,128,0)                #Position of the LED - assignment - Simulator color [R,G,B] - ORANGE
 
-            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Inside(Orange (255,128,0))~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Inside(Orange (255,128,0))~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             
             leds[110-led+6] = (255,128,0)               #Position of the LED - assignment - Simulator color [R,G,B] - ORANGE
             
@@ -97,12 +97,12 @@ def A1():                                               #DEF - keyword for defin
             leds[170-led+7] = (255,128,0)               #Position of the LED - assignment - Simulator color [R,G,B] - ORANGE
             leds[170-led+8] = (255,128,0)               #Position of the LED - assignment - Simulator color [R,G,B] - ORANGE
 
-            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Mouth(Red -(255,0,0))~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Mouth(Red -(255,0,0))~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
             leds[230-led+5] = (255,0,0)                 #Position of the LED - assignment - Simulator color [R,G,B] - RED
             leds[230-led+6] = (255,0,0)                 #Position of the LED - assignment - Simulator color [R,G,B] - RED
             leds[230-led+7] = (255,0,0)                 #Position of the LED - assignment - Simulator color [R,G,B] - RED
-            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~Eyes(Yellow (255,255,102))~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+            #~~~~~~~~~~~~~~~~~~~~~~~~~~~~Eyes[Yellow (255,255,102)]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             leds[110-led+5] = (255,255,102)             #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
             leds[110-led+7] = (255,255,102)             #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
             
@@ -112,7 +112,7 @@ def A1():                                               #DEF - keyword for defin
 
 
     ##E. Left to right (Black Swipe )
-    ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     led=0                                               #Assignment of the LED equal to 0
     for led in range(60):                               #For loop in range(X)
