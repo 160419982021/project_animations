@@ -24,7 +24,7 @@ def A3():                                               #DEF - keyword for defin
     led = 0                                             #Assignment of the LED equal to 0
     while True:                                         #While true loop = execute a block of code repeatedly until given boolean condition evaluated to False. If we write while True then the loop will run forever.
         for led in range(0, 360, 60):                   #For loop in range(X) movement of code bellow from 360 to 0 in steps of 60 positions of the LED
-            leds = [(255,255,255)]*360                  #Whole simulator Blue R,G,B (X,X,X) - WHITE
+            leds = [(224,224,224)]*360                  #Whole simulator Blue R,G,B (X,X,X) - WHITE LIGHT
             leds[330-led+1] = (0,0,255)                 #Position of the LED - assignment - Simulator color [R,G,B] - BLUE
             leds[331-led+1] = (0,0,255)                 #Position of the LED - assignment - Simulator color [R,G,B] - BLUE
             leds[332-led+1] = (0,0,255)                 #Position of the LED - assignment - Simulator color [R,G,B] - BLUE
@@ -42,7 +42,7 @@ def A3():                                               #DEF - keyword for defin
             leds[344-led+1] = (0,0,255)                 #Position of the LED - assignment - Simulator color [R,G,B] - BLUE
             leds[345-led+1] = (0,0,255)                 #Position of the LED - assignment - Simulator color [R,G,B] - BLUE
             leds[346-led+1] = (0,0,255)                 #Position of the LED - assignment - Simulator color [R,G,B] - BLUE
-            leds[347-led+1] = (0,255,255)                 #Position of the LED - assignment - Simulator color [R,G,B] - BLUE
+            leds[347-led+1] = (0,0,255)                 #Position of the LED - assignment - Simulator color [R,G,B] - BLUE
             leds[348-led+1] = (0,0,255)                 #Position of the LED - assignment - Simulator color [R,G,B] - BLUE
             leds[349-led+1] = (0,0,255)                 #Position of the LED - assignment - Simulator color [R,G,B] - BLUE
             leds[350-led+1] = (0,0,255)                 #Position of the LED - assignment - Simulator color [R,G,B] - BLUE
@@ -58,12 +58,11 @@ def A3():                                               #DEF - keyword for defin
             
             if led == 255:                              #When the LED reach/equal to 255 will do the code bellow
                 led = 0                                 #Assignment of the LED equal to 0
-            client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
-            time.sleep(2)                                   #Number in seconds - 1s
+            client.put_pixels(leds)                     #Use the Simulator_Fadecandy - LED's
+            time.sleep(.3)                               #Number in seconds - 0.3s
         
         break                                           #The break statement in Python terminates the current loop and resumes execution at the next statement
 
-        time.sleep(2)                                   #Number in seconds - 1s
 
     ##C. MOVEMENT OF THE BLOCK (DOWNWARDS) - YELLOW
     ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,74 +105,80 @@ def A3():                                               #DEF - keyword for defin
             leds[led+30 + rows*60] = (255,255,51)       #Position of the LED - assignment the rows - Simulator color [R,G,B] - YELLOW
 
             client.put_pixels(leds)                     #Use the Simulator_Fadecandy - LED's
-            time.sleep(.3)                              #Number in seconds - 0.1s
+            time.sleep(.3)                              #Number in seconds - 0.3s
 
         break                                           #The break statement in Python terminates the current loop and resumes execution at the next statement
 
 
 
 
-    ##D. Character 3 - The Grump (Mushroom) - Moving from right to left
+    ##D. Character 3 - The Grump (Mushroom) - Moving from right to left covering the whole horitzontal leds (Range 54-7)
     ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    led = 0
-    while led<60:                 
-        for led in range(54-7):
+    led = 0                                             #Assignment of the LED equal to 0
+    while led<60:                                       #While function      
+        for led in range(54-7):                         #For loop in range(X)
                 
-            leds = [(10,10,10)]*360 #Whole simulator White R,G,B (x,x,x)
+            leds = [(10,10,10)]*360                     #Whole simulator Blue R,G,B (X,X,X) - BLACK
 
                 #First line (Empty)
 
                 #Second Line
-            leds[110-led-2] = (204,102,0)
-            leds[110-led-1] = (204,102,0)
-            leds[110-led-0] = (204,102,0)
+            leds[110-led-2] = (204,102,0)               #Position of the LED - assignment - Simulator color [R,G,B] - BROWN
+            leds[110-led-1] = (204,102,0)               #Position of the LED - assignment - Simulator color [R,G,B] - BROWN
+            leds[110-led-0] = (204,102,0)               #Position of the LED - assignment - Simulator color [R,G,B] - BROWN
 
             #Third line
-            leds[170-led-3] = (204,102,0)
-            leds[170-led-2] = (255,255,102)#Yellow
-            leds[170-led-1] = (204,102,0)
-            leds[170-led-0] = (255,255,102)#Yellow
-            leds[170-led+1] = (204,102,0)
+            leds[170-led-3] = (204,102,0)               #Position of the LED - assignment - Simulator color [R,G,B] - BROWN
+            leds[170-led-2] = (255,255,102)             #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
+            leds[170-led-1] = (204,102,0)               #Position of the LED - assignment - Simulator color [R,G,B] - BROWN
+            leds[170-led-0] = (255,255,102)             #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
+            leds[170-led+1] = (204,102,0)               #Position of the LED - assignment - Simulator color [R,G,B] - BROWN
 
             #Fourth Line
-            leds[230-led-4] = (204,102,0)
-            leds[230-led-3] = (204,102,0)
-            leds[230-led-2] = (255,0,0)
-            leds[230-led-1] = (255,0,0)
-            leds[230-led] = (255,0,0)
-            leds[230-led+1] = (204,102,0)
-            leds[230-led+2] = (204,102,0)
+            leds[230-led-4] = (204,102,0)               #Position of the LED - assignment - Simulator color [R,G,B] - BROWN
+            leds[230-led-3] = (204,102,0)               #Position of the LED - assignment - Simulator color [R,G,B] - BROWN
+            leds[230-led-2] = (255,0,0)                 #Position of the LED - assignment - Simulator color [R,G,B] - RED
+            leds[230-led-1] = (255,0,0)                 #Position of the LED - assignment - Simulator color [R,G,B] - RED
+            leds[230-led] = (255,0,0)                   #Position of the LED - assignment - Simulator color [R,G,B] - RED
+            leds[230-led+1] = (204,102,0)               #Position of the LED - assignment - Simulator color [R,G,B] - BROWN
+            leds[230-led+2] = (204,102,0)               #Position of the LED - assignment - Simulator color [R,G,B] - BROWN DARK
 
             #Five Line
-            leds[290-led-2] = (255,128,0)
-            leds[290-led-1] = (255,128,0)
-            leds[290-led] = (255,128,0)
+            leds[290-led-2] = (255,128,0)               #Position of the LED - assignment - Simulator color [R,G,B] - ORANGE
+            leds[290-led-1] = (255,128,0)               #Position of the LED - assignment - Simulator color [R,G,B] - ORANGE
+            leds[290-led] = (255,128,0)                 #Position of the LED - assignment - Simulator color [R,G,B] - ORANGE
 
             #Sixth Line
-            leds[350-led-4] = (102,51,0)
-            leds[350-led-3] = (102,51,0)
+            leds[350-led-4] = (102,51,0)                #Position of the LED - assignment - Simulator color [R,G,B] - BROWN DARK
+            leds[350-led-3] = (102,51,0)                #Position of the LED - assignment - Simulator color [R,G,B] - BROWN DARK
 
-            leds[350-led+1] = (102,51,0)
-            leds[350-led+2] = (102,51,0)
+            leds[350-led+1] = (102,51,0)                #Position of the LED - assignment - Simulator color [R,G,B] - BROWN DARK
+            leds[350-led+2] = (102,51,0)                #Position of the LED - assignment - Simulator color [R,G,B] - BROWN DARK
 
-            client.put_pixels(leds)
-            time.sleep(.1)
-        break
+            client.put_pixels(leds)                     #Use the Simulator_Fadecandy - LED's
+            time.sleep(.1)                              #Number in seconds - 0.1s
+
+        break                                           #The break statement in Python terminates the current loop and resumes execution at the next statement
 
 
     ##E. Two colors from the outside will finish in the X number from the while loop (We can change the color from each side)
     ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-    led = 0
-    while led<15: # si cambio a led<60 al cruzarse se cambian los colores
-        for rows in range(6):
-            leds[led + rows*60] = (0,255,0)
-            leds[59-led + rows*60] = (0,255,0)
-        client.put_pixels(leds)
-        time.sleep(.1)
-        led = led + 1
-    return
+    led = 0                                             #Assignment of the LED equal to 0
+    while led<15:                                       #While function
+        for rows in range(6):                           #For loop in range(X) - (1 to 6) lines 
+            leds[led + rows*60] = (0,255,0)             #Position of the LED and rows - assignment - Simulator color [R,G,B] - GREEN
+            leds[59-led + rows*60] = (0,255,0)          #Position of the LED and rows - assignment - Simulator color [R,G,B] - GREEN
+        client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
+        time.sleep(.1)                                  #Number in seconds - 0.1s
+        led = led + 1                                   #Count +1 to the last number of led
+        
+    return                                              #The return statement determines the value to be returned.
 
-A3()
+
+
+
+
+A3()                                                    #Function def A1
