@@ -48,7 +48,7 @@ def A4():                                               #DEF - keyword for defin
         leds[Ghost[p]] = (255,255,255)                  #Position of the LED - assignment - Simulator color [R,G,B] - White
         client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
         time.sleep(0.1)                                 #Number in seconds - 1s
-        p = p + 1                                       #Increment by +1 to the last number of led
+        p = p + 1                                       #Increment by +1
         if p == 18:                                     #If p is equal to 18 do the code bellow
             break                                       #The break statement in Python terminates the current loop and resumes execution at the next statement
 
