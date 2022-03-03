@@ -1,5 +1,7 @@
 #Animation4 - Created by Carlos Huallpa - M00763709 - 2nd Year Robotics and Mechatronics
 
+#Website to change and modify colors (https://www.rapidtables.com/web/color/RGB_Color.html)
+
 import opc                                              #Import Open Pixel Control
 import time                                             #Import time access and conversions 
 import random                                           #Import and generate pseudo-random numbers 
@@ -10,8 +12,8 @@ def A4():                                               #DEF - keyword for defin
 ##A. Assigments
     ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         
-    leds =[(0,0,0)]*360                                 #Simulator color [R,G,B] * numbers of leds working - PINK
-    led_colour=[(0,0,0)]*360                            #Simulator color [R,G,B] * numbers of leds working - PINK
+    leds =[(0,0,0)]*360                                 #Simulator color [R,G,B] * numbers of leds working - BLACK
+    led_colour=[(0,0,0)]*360                            #Simulator color [R,G,B] * numbers of leds working - BLACK
 
     white = (255,255,255)                               #Assignment color - Simulator color [R,G,B] - White
     yellow = (255,255,102)                              #Assignment color - Simulator color [R,G,B] - Yellow
@@ -32,8 +34,8 @@ def A4():                                               #DEF - keyword for defin
         for rows in range(6):                           #For loop in range(X)
             leds[led + rows*60] = blue                  #Position of the LED and rows - assignment - Simulator color [R,G,B] - BLUE
         client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
-        time.sleep(.02)                                 #Number in seconds - 0.1s
-        led = led + 1                                   #Count +1 to the last number of led
+        time.sleep(.02)                                 #Number in seconds - 0.2s
+        led = led + 1                                   #Increment by +1 to the last number of led
 
 
 ##C. Using a list show the Character 4 Goof Ball (Gosh)
@@ -46,7 +48,7 @@ def A4():                                               #DEF - keyword for defin
         leds[Ghost[p]] = (255,255,255)                  #Position of the LED - assignment - Simulator color [R,G,B] - White
         client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
         time.sleep(0.1)                                 #Number in seconds - 1s
-        p = p + 1                                       #Count +1 to the last number of p
+        p = p + 1                                       #Increment by +1 to the last number of led
         if p == 18:                                     #If p is equal to 18 do the code bellow
             break                                       #The break statement in Python terminates the current loop and resumes execution at the next statement
 
@@ -121,7 +123,7 @@ def A4():                                               #DEF - keyword for defin
             if led == 255:                              #When the LED reach/equal to 255 will do the code bellow
                 led = 0                                 #Assignment of the LED equal to 0
             client.put_pixels(leds)                     #Use the Simulator_Fadecandy - LED's
-            time.sleep(.01)                              #Number in seconds - 0.2s
+            time.sleep(.01)                              #Number in seconds - 0.1s
         
         break                                           #The break statement in Python terminates the current loop and resumes execution at the next statement
 
