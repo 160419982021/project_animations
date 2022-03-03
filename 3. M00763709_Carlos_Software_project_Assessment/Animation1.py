@@ -1,5 +1,7 @@
 #Animation1 - Created by Carlos Huallpa - M00763709 - 2nd Year Robotics and Mechatronics
 
+#Website to change and modify colors (https://www.rapidtables.com/web/color/RGB_Color.html)
+
 import opc                                              #Import Open Pixel Control
 import time                                             #Import time access and conversions 
 import random                                           #Import and generate pseudo-random numbers 
