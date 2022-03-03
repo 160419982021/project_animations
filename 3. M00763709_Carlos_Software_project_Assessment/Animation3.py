@@ -116,7 +116,7 @@ def A3():                                               #DEF - keyword for defin
     ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     led = 0                                             #Assignment of the LED equal to 0
-    while led<60:                                       #While function      
+    while led<60:                                       #While loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition     
         for led in range(54-7):                         #For loop in range(X)
                 
             leds = [(10,10,10)]*360                     #Whole simulator Blue R,G,B (X,X,X) - BLACK
