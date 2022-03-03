@@ -162,7 +162,6 @@ def A6():                                               #DEF - keyword for defin
     ##D. Black Swipe (left to right)
         ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
     led = 0                                             #Assignment of the LED equal to 0
     while led<60:                                       #While function     
         for rows in range(6):                           #For loop in range(X)
@@ -176,132 +175,132 @@ def A6():                                               #DEF - keyword for defin
         ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     f = 0                                               #Assignment of the f equal to 0
-    #print (enumerate(leds))
     while True:                                         #While true loop = execute a block of code repeatedly until given boolean condition evaluated to False. If we write while True then the loop will run forever.
-        floor = [135,137,139,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347,348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359]
-        leds[floor[f]] = (204,102,0)
-        client.put_pixels(leds)
-        time.sleep(0.1)
-        f = f + 1
-        if f == 67:
-            break
-        
-    time.sleep(1)
+        floor = [135,137,139,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347,348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359]#Assingment of a list 
+        leds[floor[f]] = (204,102,0)                    #Asssign a color to the list made
+        client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
+        time.sleep(.01)                                 #Number in seconds - 0.1s
+        f = f + 1                                       #Increment by +1
+        if f == 67:                                     #If f is equal to 67 do the code bellow
+            break                                       #The break statement in Python terminates the current loop and resumes execution at the next statement
+    time.sleep(1)                                       #Number in seconds - 1s
+
+
 
     n = 0                                               #Assignment of the n equal to 0
-    #print (enumerate(leds))
     while True:                                         #While true loop = execute a block of code repeatedly until given boolean condition evaluated to False. If we write while True then the loop will run forever.
-        nature = [271,272,273,212, 176,116]
-        leds[nature[n]] = (0,255,0)
-        client.put_pixels(leds)
-        time.sleep(0.1)
-        n = n + 1
-        if n == 6:
-            break
-        
-    time.sleep(1)
+        nature = [271,272,273,212, 176,116]             #Assingment of a list 
+        leds[nature[n]] = (0,255,0)                     #Asssign a color to the list made
+        client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
+        time.sleep(.01)                                 #Number in seconds - 0.1s
+        n = n + 1                                       #Increment by +1
+        if n == 6:                                      #If n is equal to 6 do the code bellow
+            break                                       #The break statement in Python terminates the current loop and resumes execution at the next statement
+    time.sleep(1)                                       #Number in seconds - 1s
+
 
 
     h = 0                                               #Assignment of the h equal to 0
-    #print (enumerate(leds))
     while True:                                         #While true loop = execute a block of code repeatedly until given boolean condition evaluated to False. If we write while True then the loop will run forever.
-        tree = [236]
-        leds[tree[h]] = (255,178,102)
-        client.put_pixels(leds)
-        time.sleep(0.1)
-        h = h + 1
-        if h == 1:
-            break
-    time.sleep(1)
+        tree = [236]                                    #Assingment of a list 
+        leds[tree[h]] = (255,178,102)                   #Asssign a color to the list made
+        client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
+        time.sleep(.01)                                 #Number in seconds - 0.1s
+        h = h + 1                                       #Increment by +1
+        if h == 1:                                      #If h is equal to 1 do the code bellow
+            break                                       #The break statement in Python terminates the current loop and resumes execution at the next statement
+    time.sleep(1)                                       #Number in seconds - 1s
 
 
     c = 0                                               #Assignment of the c equal to 0
-    #print (enumerate(leds))
     while True:                                         #While true loop = execute a block of code repeatedly until given boolean condition evaluated to False. If we write while True then the loop will run forever.
-        clouds = [38,39,40,41, 99,100,  24,25,26]
-        leds[clouds[c]] = (0,255,255)
-        client.put_pixels(leds)
-        time.sleep(0.1)
-        c = c + 1
-        if c == 9:
-            break
-    time.sleep(1)
+        clouds = [38,39,40,41, 99,100,  24,25,26]       #Assingment of a list 
+        leds[clouds[c]] = (0,255,255)                   #Asssign a color to the list made
+        client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
+        time.sleep(.01)                                 #Number in seconds - 0.1s
+        c = c + 1                                       #Increment by +1
+        if c == 9:                                      #If c is equal to 9 do the code bellow
+            break                                       #The break statement in Python terminates the current loop and resumes execution at the next statement
+    time.sleep(1)                                       #Number in seconds - 1s
+
 
 
     e = 0                                               #Assignment of the e equal to 0
-    #print (enumerate(leds))
     while True:                                         #While true loop = execute a block of code repeatedly until given boolean condition evaluated to False. If we write while True then the loop will run forever.
-        especial = [131,17,138]
-        leds[especial[e]] = (255,255,0)
-        client.put_pixels(leds)
-        time.sleep(0.1)
-        e = e + 1
-        if e == 3:
-            break
-    time.sleep(1)
+        especial = [131,17,138]                         #Assingment of a list 
+        leds[especial[e]] = (255,255,0)                 #Asssign a color to the list made
+        client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
+        time.sleep(.01)                                 #Number in seconds - 0.1s
+        e = e + 1                                       #Increment by +1
+        if e == 3:                                      #If e is equal to 3 do the code bellow
+            break                                       #The break statement in Python terminates the current loop and resumes execution at the next statement
+    time.sleep(1)                                       #Number in seconds - 1s
+
 
     b = 0                                               #Assignment of the b equal to 0
-    #print (enumerate(leds))
     while True:                                         #While true loop = execute a block of code repeatedly until given boolean condition evaluated to False. If we write while True then the loop will run forever.
-        block = [136]
-        leds[block[b]] = (102,0,0)
-        client.put_pixels(leds)
-        time.sleep(0.1)
-        b = b + 1
-        if b == 1:
-            break
-    time.sleep(1)
+        block = [136]                                   #Assingment of a list 
+        leds[block[b]] = (102,0,0)                      #Asssign a color to the list made
+        client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
+        time.sleep(.01)                                 #Number in seconds - 0.1s
+        b = b + 1                                       #Increment by +1
+        if b == 1:                                      #If b is equal to 1 do the code bellow
+            break                                       #The break statement in Python terminates the current loop and resumes execution at the next statement
+    time.sleep(1)                                       #Number in seconds - 1s
+
 
 
     t = 0                                               #Assignment of the t equal to 0
-    #print (enumerate(leds))
     while True:                                         #While true loop = execute a block of code repeatedly until given boolean condition evaluated to False. If we write while True then the loop will run forever.
-        warrior = [75,248]
-        leds[warrior[t]] = (255,0,255)#PINK
-        client.put_pixels(leds)
-        time.sleep(0.1)
-        t = t + 1
-        if t == 2:
-            break
-    time.sleep(1)
+        warrior = [75,248]                              #Assingment of a list 
+        leds[warrior[t]] = (255,0,255)                  #Asssign a color to the list made
+        client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
+        time.sleep(.01)                                 #Number in seconds - 0.1s
+        t = t + 1                                       #Increment by +1
+        if t == 2:                                      #If t is equal to 2 do the code bellow                          
+            break                                       #The break statement in Python terminates the current loop and resumes execution at the next statement
+    time.sleep(1)                                       #Number in seconds - 1s
+
 
 
     r = 0                                               #Assignment of the r equal to 0
-    #print (enumerate(leds))
     while True:                                         #While true loop = execute a block of code repeatedly until given boolean condition evaluated to False. If we write while True then the loop will run forever.
-        connection = [5,6,64,65,66,67, 228,229,230,231,289,290]
-        leds[connection[r]] = (76,153,0)
-        client.put_pixels(leds)
-        time.sleep(0.1)
-        r = r + 1
-        if r == 12:
-            break
-    time.sleep(1)
+        connection = [5,6,64,65,66,67, 228,229,230,231,289,290]#Assingment of a list 
+        leds[connection[r]] = (76,153,0)                #Asssign a color to the list made
+        client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
+        time.sleep(.01)                                 #Number in seconds - 0.1s
+        r = r + 1                                       #Increment by +1
+        if r == 12:                                      #If r is equal to 12 do the code bellow
+            break                                       #The break statement in Python terminates the current loop and resumes execution at the next statement
+    time.sleep(1)                                       #Number in seconds - 1s
+
+
 
     m = 0                                               #Assignment of the m equal to 0
-    #print (enumerate(leds))
     while True:                                         #While true loop = execute a block of code repeatedly until given boolean condition evaluated to False. If we write while True then the loop will run forever.
-        mario = [240]
-        leds[mario[m]] = (255,0,0)
-        client.put_pixels(leds)
-        time.sleep(0.1)
-        m = m + 1
-        if m == 1:
-            break
-    time.sleep(1)
+        mario = [240]                                   #Assingment of a list 
+        leds[mario[m]] = (255,0,0)                      #Asssign a color to the list made
+        client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
+        time.sleep(.01)                                 #Number in seconds - 0.1s
+        m = m + 1                                       #Increment by +1
+        if m == 1:                                      #If m is equal to 1 do the code bellow
+            break                                       #The break statement in Python terminates the current loop and resumes execution at the next statement
+    time.sleep(1)                                       #Number in seconds - 1s
 
 
-    ##F. Show parts of the Game World 1 in order of the list made
+    ##F. Black swipe
         ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    led = 0                                             #Assignment of the LED equal to 0
+    while led<60:                                       #While function     
+        for rows in range(6):                           #For loop in range(X)
+            leds[led + rows*60] = (0,0,0)               #Position of the LED and rows - assignment - Simulator color [R,G,B] - BLUE
+        client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
+        time.sleep(.02)                                 #Number in seconds - 0.2s
+        led = led + 1                                   #Increment by +1 to the last number of led
 
-        #3. (Swipe left to right) para hacer todo de un color pero todas las filas a la vez 
-    led = 0
-    while led<60:
-        for rows in range(6):
-            leds[led + rows*60] = (0,0,0)
-        client.put_pixels(leds)
-        time.sleep(.02)
-        led = led + 1
+
+
+
 
 A6()
 
