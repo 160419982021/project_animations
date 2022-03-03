@@ -41,7 +41,7 @@ def A1():                                               #DEF - keyword for defin
     while led<60:                                       #While function
         for rows in range(3):                           #For loop in range(X) - (1 to 3) lines from left to right
             leds[led + rows*60] = (51,255,255)          #Position of the LED and rows - assignment - Simulator color [R,G,B] - LIGHT BLUE
-        for rows in range(3,6):                         #For loop in range(X) - (1 to 3) lines from right to left
+        for rows in range(3,6):                         #For loop in range(X) - (4 to 6) lines from right to left
             leds[59-led + rows*60] = (0,255,0)          #Position of the LED and rows - assignment - Simulator color [R,G,B] - GREEN
         client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
         time.sleep(.01)                                 #Number in seconds - 0.1s
