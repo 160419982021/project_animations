@@ -122,28 +122,43 @@ client = opc.Client('localhost:7890')
 client.put_pixels(leds)
 client.put_pixels(leds)
 
-led = 0
-while led<60:
-        leds[0+led] = (0,255,0)
-        leds[59+led] = (0,255,0)
-        leds[119+led] = (0,255,0)
-        leds[179-led] = (0,255,0)
-        leds[239-led] = (0,255,0)
-        leds[299-led] = (0,255,0)
-        leds[359-led] = (0,255,0)
-        
-        time.sleep(.1)
-        client.put_pixels(leds)
-        led = led + 2
+
 
 
 led = 0
 while led<60:
 
     for rows in range(0,6): 
-        leds[59-led + rows*60] = (rows*25,75,255)
+        leds[59-led + rows*60] = (rows*50,70,240)
     client.put_pixels(leds)
     time.sleep(.00001)
     led = led + 1
 
+time.sleep(2)
+
+led = 0
+while led<60:
+        leds[0+led] = (0,255,0)
+        leds[60+led] = (0,255,0)
+        leds[120+led] = (0,255,0)
+        leds[239-led] = (0,255,0)
+        leds[299-led] = (0,255,0)
+        leds[359-led] = (0,255,0)
+        
+        time.sleep(.1)
+        client.put_pixels(leds)
+        led = led + 1
+
+led = 0
+while led<60:
+        leds[0+led] = (255,0,0)
+        leds[60+led] = (255,0,0)
+        leds[120+led] = (255,0,0)
+        leds[239-led] = (255,0,0)
+        leds[299-led] = (255,0,0)
+        leds[359-led] = (255,0,0)
+        
+        time.sleep(.1)
+        client.put_pixels(leds)
+        led = led + 2
 
