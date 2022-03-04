@@ -198,60 +198,60 @@ Welcome to my code!!!
 
         
         #First line
-        leds[0-led] = (160,160,160)                         #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[0-led+1] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[0-led+3] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[0+led] = (160,160,160)                         #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[0+led+1] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[0+led+3] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
 
-        leds[0-led+5] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[0-led+7] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[0-led+8] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[0+led+5] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[0+led+7] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[0+led+8] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
 
         #Second Line
-        leds[60-led] = (160,160,160)                        #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[60-led+1] = (160,160,160)                      #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[60-led+2] = (255,255,102)                      #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
-        leds[60-led+3] = (255,255,102)                      #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
-        leds[60-led+4] = (160,160,160)                      #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[60-led+5] = (255,255,102)                      #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
-        leds[60-led+6] = (255,255,102)                      #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
-        leds[60-led+7] = (160,160,160)                      #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[60-led+8] = (160,160,160)                      #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[60+led] = (160,160,160)                        #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[60+led+1] = (160,160,160)                      #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[60+led+2] = (255,255,102)                      #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
+        leds[60+led+3] = (255,255,102)                      #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
+        leds[60+led+4] = (160,160,160)                      #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[60+led+5] = (255,255,102)                      #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
+        leds[60+led+6] = (255,255,102)                      #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
+        leds[60+led+7] = (160,160,160)                      #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[60+led+8] = (160,160,160)                      #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
 
         #Third line
-        leds[120-led+1] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[120-led+2] = (255,255,102)                     #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
-        leds[120-led+3] = (255,255,102)                     #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
-        leds[120-led+4] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[120-led+5] = (255,255,102)                     #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
-        leds[120-led+6] = (255,255,102)                     #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
-        leds[120-led+7] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[120+led+1] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[120+led+2] = (255,255,102)                     #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
+        leds[120+led+3] = (255,255,102)                     #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
+        leds[120+led+4] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[120+led+5] = (255,255,102)                     #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
+        leds[120+led+6] = (255,255,102)                     #Position of the LED - assignment - Simulator color [R,G,B] - YELLOW
+        leds[120+led+7] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
 
         #Fourth Line
-        leds[180-led] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[180-led+1] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[180-led+2] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[180-led+3] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[180-led+4] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[180-led+5] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[180-led+6] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[180-led+7] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[180-led+8] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[180+led] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[180+led+1] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[180+led+2] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[180+led+3] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[180+led+4] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[180+led+5] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[180+led+6] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[180+led+7] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[180+led+8] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
 
         #Five Line
-        leds[240-led+1] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[240-led+2] = (255,0,0)                         #Position of the LED - assignment - Simulator color [R,G,B] - RED
-        leds[240-led+3] = (255,0,0)                         #Position of the LED - assignment - Simulator color [R,G,B] - RED
-        leds[240-led+4] = (255,0,0)                         #Position of the LED - assignment - Simulator color [R,G,B] - RED
-        leds[240-led+5] = (255,0,0)                         #Position of the LED - assignment - Simulator color [R,G,B] - RED
-        leds[240-led+6] = (255,0,0)                         #Position of the LED - assignment - Simulator color [R,G,B] - RED
-        leds[240-led+7] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[240+led+1] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[240+led+2] = (255,0,0)                         #Position of the LED - assignment - Simulator color [R,G,B] - RED
+        leds[240+led+3] = (255,0,0)                         #Position of the LED - assignment - Simulator color [R,G,B] - RED
+        leds[240+led+4] = (255,0,0)                         #Position of the LED - assignment - Simulator color [R,G,B] - RED
+        leds[240+led+5] = (255,0,0)                         #Position of the LED - assignment - Simulator color [R,G,B] - RED
+        leds[240+led+6] = (255,0,0)                         #Position of the LED - assignment - Simulator color [R,G,B] - RED
+        leds[240+led+7] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
 
         #Sixth Line
-        leds[300-led] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[300-led+2] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[300-led+4] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[300-led+6] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
-        leds[300-led+8] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[300+led] = (160,160,160)                       #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[300+led+2] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[300+led+4] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[300+led+6] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
+        leds[300+led+8] = (160,160,160)                     #Position of the LED - assignment - Simulator color [R,G,B] - SILVER
 
         client.put_pixels(leds)
         time.sleep(5)
