@@ -560,7 +560,7 @@ Welcome to my code!!!
                 if led == 255:                              #When the LED reach/equal to 255 will do the code bellow
                     led = 0                                 #Assignment of the LED equal to 0
                 client.put_pixels(leds)                     #Use the Simulator_Fadecandy - LED's
-                time.sleep(.01)                              #Number in seconds - 0.1s
+                time.sleep(.04)                             #Number in seconds - 0.04s
             
             break                                           #The break statement in Python terminates the current loop and resumes execution at the next statement
 
@@ -999,7 +999,7 @@ Welcome to my code!!!
             led = led + 1                                   #Increment by +1 to the last number of led
 
 
-    def world_r():
+    def world_r():#7 animation 7
 
         floor=[135,137,139,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347,348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359]
         nature = [271,272,273,212, 176,116]
@@ -1022,30 +1022,6 @@ Welcome to my code!!!
             client.put_pixels(leds)                         #Use the Simulator_Fadecandy - LED's
             time.sleep(0.1)                               #Number in seconds - 0.055s
             
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
-        world_r ()                                              #Function def of world_r
-        time.sleep(2)                                           #Number in seconds - 1s
 
 
     def A8():
@@ -1104,7 +1080,30 @@ Welcome to my code!!!
     elif value == 6:
         A6()
     elif value == 7:
-        world_r ()
+
+        world_r ()                                              #Function def of world_r
+        time.sleep(1)                                           #Number in seconds - 1s
+        world_r ()                                              #Function def of world_r
+        time.sleep(1)                                           #Number in seconds - 1s
+        world_r ()                                              #Function def of world_r
+        time.sleep(1)                                           #Number in seconds - 1s
+        world_r ()                                              #Function def of world_r
+        time.sleep(1)                                           #Number in seconds - 1s
+        world_r ()                                              #Function def of world_r
+        time.sleep(1)                                           #Number in seconds - 1s
+        world_r ()                                              #Function def of world_r
+        time.sleep(1)                                           #Number in seconds - 1s
+        world_r ()                                              #Function def of world_r
+        time.sleep(1)                                           #Number in seconds - 1s
+        world_r ()                                              #Function def of world_r
+        time.sleep(1)                                           #Number in seconds - 1s
+        world_r ()                                              #Function def of world_r
+        time.sleep(1)                                           #Number in seconds - 1s
+        world_r ()                                              #Function def of world_r
+        time.sleep(1)                                           #Number in seconds - 1s
+        world_r ()                                              #Function def of world_r
+        time.sleep(1)                                           #Number in seconds - 1s
+
     elif value == 8:
         A8()
 
