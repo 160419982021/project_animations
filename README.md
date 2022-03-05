@@ -28,3 +28,10 @@ Email: ch1140@live.mdx.ac.uk
 During the whole code created in the interface (Interface_Code_MainCode.py) I used While loops, While true loops, Loops, functions to call, time, time.sleep, Lists, counters, inputs which you have to have information to code.
 
 This code have to the planned to have a good code and improve every single time depends on what the person which is coding want to do. I used a grid done in a document word which after I printed to have and code from the paper and apply that information and used in the program of Python.
+
+Links to download software for this project are the following:
+1. https://www.python.org/downloads/
+2. https://www.java.com/download/ie_manual.jsp
+
+Link of the video created in the Youtube is the following:
+1. https://youtu.be/mGVGLOh6NSU
