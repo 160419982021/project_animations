@@ -98,6 +98,7 @@ def A8():                                                                       
                 r,g,b = rgb_fractional                                                                  #extract said floating point numbers and convert to rgb range
                 leds[i] = (r*255,g*255,b*255)                                                           #From the range i created 3 lines up we assignet the colours in RGB
                 client.put_pixels(leds)                                                                 #Use the Simulator_Fadecandy - LED's
+                break
         time.sleep(0.1)                                                                                 #Number in seconds - 0.1s
 
         # Left AND right (Black Swipe ) 
@@ -109,7 +110,7 @@ def A8():                                                                       
                     leds[led + rows*60] = (0,0,0)                                                       #Position of the LED and rows - assignment - Simulator color [R,G,B] - BLACK
                     leds[59-led + rows*60] = (0,0,0)                                                    #Position of the LED and rows - assignment - Simulator color [R,G,B] - BLACK
                 client.put_pixels(leds)                                                                 #Use the Simulator_Fadecandy - LED's
-                time.sleep(.02)                                                                         #Number in seconds - 0.2s
+                time.sleep(.1)                                                                          #Number in seconds - 0.1s
                 led = led + 1                                                                           #Count +1 to the last number of led
 
         #Blinker Animation
